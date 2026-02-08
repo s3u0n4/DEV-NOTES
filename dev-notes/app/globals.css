@@ -64,6 +64,11 @@ body {
   grid-template-columns: repeat(2, 360px);
   gap: 50px;
 }
+.cardWrapper a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 
 .card {
   background: linear-gradient(180deg, #222, #111);
@@ -73,6 +78,7 @@ body {
   text-align: center;
   transition: all 0.25s ease;
   cursor: pointer;
+  height: 444px;
 }
 
 .card:hover {

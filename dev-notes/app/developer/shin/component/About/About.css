@@ -1,0 +1,91 @@
+/* 공통 섹션 베이스 */
+.section {
+  min-height: 100vh;
+  width: 100%;
+
+  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #020617;
+  text-align: center;
+}
+
+/* 섹션 타이틀 */
+.sectionTitle {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 64px;
+}
+
+/* 카드 묶음 */
+.aboutCards {
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+/* 개별 카드 */
+.aboutCard {
+  padding: 28px 24px;
+  background: linear-gradient(180deg, #151a2b, #0d1120);
+
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.aboutCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.2);
+}
+
+/* 카드 제목 */
+.aboutCard h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* 카드 설명 */
+.aboutCard p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cbd5f5;
+}
+
+/* 하단 설명 */
+.aboutDescription {
+  max-width: 760px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #9ca3af;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+  .aboutCards {
+    grid-template-columns: repeat(2, 280px);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 100px 20px;
+  }
+
+  .sectionTitle {
+    font-size: 30px;
+  }
+
+  .aboutCards {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutDescription {
+    font-size: 15px;
+  }
+}
