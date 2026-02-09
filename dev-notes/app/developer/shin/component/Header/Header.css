@@ -1,0 +1,55 @@
+/* 헤더 전체 */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: #101627;
+  backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* 내부 컨테이너 */
+.headerInner {
+  padding: 0px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerInner h1 {
+  font-size: 20px;
+}
+
+/* 로고 영역 */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fc64b3;
+}
+/* 네비 / 토글 영역 */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 18px;
+}
+
+.nav a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+  .nav {
+    gap: 8px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+}

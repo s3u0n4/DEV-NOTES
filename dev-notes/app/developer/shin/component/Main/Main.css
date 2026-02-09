@@ -10,7 +10,8 @@
   padding: 0 24px;
   text-align: center;
 
-  background: radial-gradient(circle at top, #0f172a 0%, #020617 70%);
+  background-color: #030712;
+  color: #fc64b3;
 }
 
 /* 상단 배지 */
@@ -22,16 +23,12 @@
   font-weight: 500;
 
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  color: #c7d2fe;
+  background: #471636;
 }
 
 /* 메인 타이틀 */
 .main h1 {
-  font-size: 48px;
-  font-weight: 800;
-  line-height: 1.15;
-  letter-spacing: -0.5px;
+  font-size: 60px;
 
   margin-bottom: 24px;
 }
@@ -40,11 +37,9 @@
 .main .description {
   max-width: 720px;
 
-  font-size: 17px;
+  font-size: 20px;
   line-height: 1.7;
-  color: #cbd5f5;
-
-  margin-bottom: 44px;
+  color: #99a1af;
 }
 
 /* 버튼 영역 */
@@ -69,7 +64,7 @@
 
 /* primary 버튼 */
 .main .btn.primary {
-  background: #6366f1;
+  background: #f6339a;
   color: #ffffff;
 }
 
@@ -80,7 +75,7 @@
 
 /* secondary 버튼 */
 .main .btn.secondary {
-  background: transparent;
+  background-color: #1e2939;
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
