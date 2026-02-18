@@ -3,7 +3,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="headerInner">
-        <h1 className="logo">&lt;/&gt;Developer Portfolio</h1>
+        <h1 className="logo">&lt;/&gt; Developer Portfolio</h1>
 
         <nav className="nav">
           <a href="#about">About</a>

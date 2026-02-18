@@ -17,9 +17,9 @@
 /* 상단 배지 */
 .main .badge {
   margin-bottom: 18px;
-  padding: 6px 14px;
+  padding: 10px 30px;
 
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 500;
 
   border-radius: 999px;
@@ -40,24 +40,25 @@
   font-size: 20px;
   line-height: 1.7;
   color: #99a1af;
+  margin-bottom: 50px;
 }
 
 /* 버튼 영역 */
 .main .actions {
   display: flex;
-  gap: 16px;
+  gap: 60px;
 }
 
 /* 버튼 공통 */
 .main .btn {
   min-width: 160px;
-  padding: 14px 28px;
+  padding: 14px 40px;
 
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   text-decoration: none;
 
-  border-radius: 999px;
+  border-radius: 10px;
   cursor: pointer;
   transition: all 0.25s ease;
 }

@@ -1,15 +1,99 @@
 .footer {
-  margin-top: 120px;
-  padding: 40px 0;
-
-  text-align: center;
-
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(10, 15, 30, 0.6);
+  color: #94a3b8;
 }
 
-.footer p {
-  font-size: 13px;
-  color: #94a3b8;
-  letter-spacing: 0.4px;
+.footerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* 왼쪽 */
+.footerLogo {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fe65a7;
+}
+
+.footerLogo span {
+  color: #f6339a;
+  margin-right: 6px;
+}
+
+.footerLeft p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+/* 가운데 */
+.footerCenter h3,
+.footerRight h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footerCenter ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerCenter li {
+  margin-bottom: 10px;
+}
+
+.footerCenter a {
+  text-decoration: none;
+  color: #64748b;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.footerCenter a:hover {
+  color: #f6339a;
+}
+
+/* 오른쪽 */
+.footerIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.footerIcons a {
+  width: 36px;
+  height: 36px;
+  background: #111827;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.3s;
+}
+
+.footerIcons img {
+  width: 18px;
+  height: 18px;
+}
+
+.footerIcons a:hover {
+  background: #f6339a;
+  transform: translateY(-3px);
+}
+
+/* 아래 구분선 + 카피라이트 */
+.footerBottom {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid #1e293b;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
 }
