@@ -40,23 +40,37 @@
   text-decoration: none;
 }
 
-.profileToggle {
-  margin-left: 20px;
-  padding: 8px 16px;
+.toggleSwitch {
+  width: 60px;
+  height: 32px;
+  background: #1e293b;
   border-radius: 20px;
-  border: none;
+  position: relative;
   cursor: pointer;
-
-  background: #f6339a;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-
-  transition: 0.3s;
+  transition: 0.3s ease;
+  margin-left: 20px;
 }
 
-.profileToggle:hover {
-  opacity: 0.8;
+/* 움직이는 동그라미 */
+.toggleCircle {
+  width: 26px;
+  height: 26px;
+  background: #f6339a;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  transition: 0.3s ease;
+}
+
+/* sun 상태 */
+.toggleSwitch.sun .toggleCircle {
+  transform: translateX(28px);
+}
+
+/* hover 효과 */
+.toggleSwitch:hover {
+  box-shadow: 0 0 12px rgba(246, 51, 154, 0.4);
 }
 
 /* 모바일 대응 */

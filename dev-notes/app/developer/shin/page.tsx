@@ -7,7 +7,7 @@ import Contact from "./component/Contact/Contact";
 import Footer from "./component/Footer/Footer";
 import Header from "./component/Header/Header";
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <Header />

@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
-import "../Header/Header.css";
+import "./Header.css";
 
 export default function Header() {
   const pathname = usePathname();
@@ -30,10 +30,13 @@ export default function Header() {
           <a href="#contact">Contact</a>
         </nav>
 
-        {/* 🔥 개발자 전환 버튼 */}
-        <button className="profileToggle" onClick={toggleDeveloper}>
-          {isSun ? "신중하 보기" : "이선용 보기"}
-        </button>
+        {/* 🔥 스위치 토글 */}
+        <div
+          className={`toggleSwitch ${isSun ? "sun" : "shin"}`}
+          onClick={toggleDeveloper}
+        >
+          <div className="toggleCircle" />
+        </div>
       </div>
     </header>
   );
