@@ -40,17 +40,17 @@ export default function Footer() {
           <h3>Connect</h3>
           <div className="footerIcons">
             <a href="#">
-              <img src="/github.png" alt="github" />
+              <img src="/sun/git.png" alt="github" />
             </a>
             <a href="#">
-              <img src="/mail.png" alt="mail" />
+              <img src="/sun/mail.png" alt="mail" />
             </a>
           </div>
         </div>
       </div>
 
       <div className="footerBottom">
-        © 2026 Jungha Shin. All rights reserved.
+        © 2026 Sunyoung Lee. All rights reserved.
       </div>
     </footer>
   );

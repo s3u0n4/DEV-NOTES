@@ -1,0 +1,112 @@
+/* 프로젝트 그리드 */
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  gap: 32px;
+  margin-top: 48px;
+  text-align: left;
+}
+
+/* 프로젝트 카드 */
+.projectCard {
+  padding: 22px;
+  border-radius: 8px;
+  background: #fffdf2;
+  border: 1px solid #dcdfe6;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.25);
+}
+
+/* 썸네일 */
+.thumbnail {
+  width: 100%;
+  height: 180px;
+
+  border-radius: 12px;
+  margin-bottom: 18px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.35),
+    rgba(30, 64, 175, 0.35)
+  );
+}
+
+/* 프로젝트 제목 */
+.projectCard h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111828;
+}
+
+/* 설명 */
+.projectCard p {
+  color: #111828;
+  font-size: 11px;
+  margin-bottom: 16px;
+}
+
+/* 태그 */
+.tags {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 18px;
+  border-radius: 4px;
+}
+
+.tags span {
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 200px;
+  color: #8a34fe;
+  background: #f5f3f7;
+  border-radius: 999px;
+  border: 1px solid #dcdfe6;
+}
+
+/* 링크 영역 */
+.links {
+  display: flex;
+  gap: 14px;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4a5565;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #818cf8;
+}
+
+.links img {
+  width: 13px;
+}
+
+/* 반응형 */
+@media (max-width: 1200px) {
+  .projectGrid {
+    grid-template-columns: repeat(2, 320px);
+  }
+}
+
+@media (max-width: 768px) {
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .projectCard {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}

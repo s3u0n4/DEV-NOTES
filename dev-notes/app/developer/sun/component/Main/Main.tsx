@@ -4,7 +4,7 @@ export default function Main() {
     <section className="main">
       <span className="badge">👋 Welcome to my portfolio</span>
 
-      <h1>Mobile Full Stack Developer</h1>
+      <h1>Web Frontend Developer</h1>
 
       <p className="description">
         새로운 기술 앞에서 저는 먼저 “왜?”라는 질문을 던집니다. <br />그 위에서

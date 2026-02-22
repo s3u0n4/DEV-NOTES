@@ -16,7 +16,7 @@ export default function Home() {
       <section className="cardWrapper">
         <Link href="/developer/sun">
           <DeveloperCard
-            icon="../webDesign.png"
+            icon="../web.png"
             name="이선용"
             role="WEB · FRONTEND DEVELOPER"
             skills={[

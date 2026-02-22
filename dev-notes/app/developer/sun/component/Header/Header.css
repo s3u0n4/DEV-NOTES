@@ -4,8 +4,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #101627;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background-color: #fffbea;
+  border-bottom: 1px solid #dcdfe6;
+  z-index: 9999;
+  isolation: isolate;
 }
 
 /* 내부 컨테이너 */
@@ -25,9 +27,23 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #fc64b3;
+  color: #7f22fe;
+}
+.logo a {
+  text-decoration: none;
 }
 /* 네비 / 토글 영역 */
+.navGroup {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  margin-left: 120px;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -36,41 +52,46 @@
 }
 
 .nav a {
-  color: #ffff;
+  color: #364153;
   text-decoration: none;
 }
-
+/* 토글 전체 */
 .toggleSwitch {
+  background-color: #ddd6ff;
   width: 60px;
-  height: 32px;
-  background: #1e293b;
-  border-radius: 20px;
+  height: 34px;
+  border-radius: 999px;
   position: relative;
   cursor: pointer;
-  transition: 0.3s ease;
-  margin-left: 20px;
 }
 
-/* 움직이는 동그라미 */
+/* 동그라미 */
 .toggleCircle {
-  width: 26px;
-  height: 26px;
-  background: #f6339a;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   position: absolute;
-  top: 3px;
-  left: 4px;
-  transition: 0.3s ease;
+  top: 2px;
+  left: 3px;
+  transition: transform 0.35s ease;
+  background-color: #8e51ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggleCircle img {
+  width: 20px;
+  height: 20px;
 }
 
-/* sun 상태 */
+/* 🔥 sun 페이지 → 왼쪽 */
 .toggleSwitch.sun .toggleCircle {
-  transform: translateX(28px);
+  transform: translateX(0);
 }
 
-/* hover 효과 */
-.toggleSwitch:hover {
-  box-shadow: 0 0 12px rgba(246, 51, 154, 0.4);
+/* 🔥 shin 페이지 → 오른쪽 */
+.toggleSwitch.shin .toggleCircle {
+  transform: translateX(36px);
 }
 
 /* 모바일 대응 */

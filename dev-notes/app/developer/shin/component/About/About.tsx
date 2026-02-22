@@ -6,6 +6,10 @@ export default function About() {
 
       <div className="aboutCards">
         <div className="aboutCard">
+          <div className="img">
+            <img src="../shin/AboutOne.png" alt="one" />
+          </div>
+
           <h3>Flow First</h3>
           <p>
             기능 구현하기 전에 사용자와 시스템의 흐름을 먼저 파악합니다.
@@ -15,6 +19,10 @@ export default function About() {
         </div>
 
         <div className="aboutCard">
+          <div className="img">
+            <img src="../shin/AboutTwo.png" alt="two" />
+          </div>
+
           <h3>Structural Thinking</h3>
           <p>
             문제의 본질을 구조적으로 분해하고 설계합니다.
@@ -24,6 +32,10 @@ export default function About() {
         </div>
 
         <div className="aboutCard">
+          <div className="img">
+            <img src="../shin/AboutThird.png" alt="third" />
+          </div>
+
           <h3>Reasoned Technology</h3>
           <p>
             새로운 기술 앞에서 먼저 왜?를 묻습니다.

@@ -54,16 +54,16 @@
   display: flex;
   gap: 6px;
   margin-bottom: 18px;
-  border-radius: 4px;
 }
 
 .tags span {
   padding: 4px 8px;
   font-size: 12px;
   font-weight: 200px;
-  color: #c7d2fe;
-  background: #f6339a;
-  border-radius: 999px;
+  color: #fb64b6;
+  background: #f6339b21;
+  border-radius: 3px;
+  border: 1px solid #4c1e37;
 }
 
 /* 링크 영역 */

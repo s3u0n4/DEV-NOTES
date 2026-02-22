@@ -58,7 +58,7 @@
 
 /* 카드 제목 */
 .aboutCard h3 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   margin-bottom: 12px;
 }
@@ -67,15 +67,28 @@
 .aboutCard p {
   font-size: 14px;
   line-height: 1.6;
-  color: #cbd5f5;
+  color: #99a1af;
 }
 
+.img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: #431648;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img img {
+  width: 24px;
+}
 /* 하단 설명 */
 .aboutDescription {
   max-width: 760px;
   font-size: 16px;
   line-height: 1.8;
-  color: #9ca3af;
+  color: #d1d5db;
 }
 
 /* 반응형 */

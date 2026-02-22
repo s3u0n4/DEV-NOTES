@@ -5,7 +5,9 @@
   left: 0;
   width: 100%;
   background-color: #101627;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid#272729;
+  z-index: 9999;
+  isolation: isolate;
 }
 
 /* 내부 컨테이너 */
@@ -27,6 +29,18 @@
   gap: 10px;
   color: #fc64b3;
 }
+.logo a {
+  text-decoration: none;
+}
+.navGroup {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  margin-left: 120px;
+}
 /* 네비 / 토글 영역 */
 .nav {
   display: flex;
@@ -39,26 +53,142 @@
   color: #ffff;
   text-decoration: none;
 }
-
-.profileToggle {
-  margin-left: 20px;
-  padding: 8px 16px;
-  border-radius: 20px;
-  border: none;
+/* 토글 전체 */
+.toggleSwitch {
+  background-color: #364152;
+  width: 60px;
+  height: 34px;
+  border-radius: 999px;
+  position: relative;
   cursor: pointer;
-
-  background: #f6339a;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-
-  transition: 0.3s;
 }
 
-.profileToggle:hover {
-  opacity: 0.8;
+/* 동그라미 */
+.toggleCircle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  background-color: #f6339a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 헤더 전체 */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #101627;
+    border-bottom: 1px solid#272729;
+
+    z-index: 9999;
+    isolation: isolate;
+  }
+
+  /* 내부 컨테이너 */
+  .headerInner {
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .headerInner h1 {
+    font-size: 20px;
+  }
+
+  /* 로고 영역 */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fc64b3;
+  }
+  .navGroup {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    margin-left: 120px;
+  }
+  /* 네비 / 토글 영역 */
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 18px;
+  }
+
+  .nav a {
+    color: #ffff;
+    text-decoration: none;
+  }
+  /* 토글 전체 */
+  .toggleSwitch {
+    background-color: #364152;
+    width: 60px;
+    height: 34px;
+    border-radius: 999px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  /* 동그라미 */
+  .toggleCircle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    background-color: #f6339a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.35s ease;
+  }
+  .toggleCircle img {
+    height: 20px;
+  }
+
+  /* 🔥 sun 페이지 → 왼쪽 */
+  .toggleSwitch.sun .toggleCircle {
+    transform: translateX(0);
+  }
+
+  /* 🔥 shin 페이지 → 오른쪽 */
+  .toggleSwitch.shin .toggleCircle {
+    transform: translateX(36px);
+  }
+  /* 모바일 대응 */
+  @media (max-width: 768px) {
+    .nav {
+      gap: 8px;
+    }
+
+    .logo {
+      font-size: 16px;
+    }
+  }
+}
+.toggleCircle img {
+  height: 20px;
 }
 
+/* 🔥 sun 페이지 → 왼쪽 */
+.toggleSwitch.sun .toggleCircle {
+  transform: translateX(0);
+}
+
+/* 🔥 shin 페이지 → 오른쪽 */
+.toggleSwitch.shin .toggleCircle {
+  transform: translateX(24px);
+}
 /* 모바일 대응 */
 @media (max-width: 768px) {
   .nav {

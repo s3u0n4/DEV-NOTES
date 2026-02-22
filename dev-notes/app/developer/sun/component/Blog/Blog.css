@@ -1,0 +1,99 @@
+/* 블로그 그리드 */
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  gap: 32px;
+  text-align: left;
+}
+
+/* 블로그 카드 */
+.blogCard {
+  position: relative;
+  padding: 22px;
+  border-radius: 16px;
+  background: #fffdf2;
+  border: 1px solid #dcdfe6;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.blogCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.25);
+}
+
+/* 카테고리 배지 */
+.category {
+  position: absolute;
+
+  padding: 2px 20px;
+  font-size: 12px;
+  margin: 15px;
+  background: #a683ff;
+  border-radius: 100px;
+}
+.blogMeta {
+  display: flex;
+  gap: 10px;
+  color: #6a7282;
+  font-size: 10px;
+}
+.blogMeta span {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* 아이콘과 글자 사이 간격 */
+}
+
+.blogMeta img {
+  width: 14px;
+  height: 14px;
+  opacity: 0.8;
+}
+/* 제목 */
+.blogCard h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 0px;
+  color: #111828;
+}
+
+/* 설명 */
+.blogCard p {
+  font-size: 11px;
+  color: #111828;
+}
+
+/* Read more */
+.readMore {
+  margin-top: auto;
+
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+
+  color: #a683ff;
+  transition: color 0.2s ease;
+}
+
+.readMore:hover {
+  color: #d91be3;
+}
+
+/* 반응형 */
+@media (max-width: 1200px) {
+  .blogGrid {
+    grid-template-columns: repeat(2, 320px);
+  }
+}
+
+@media (max-width: 768px) {
+  .blogGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .blogCard {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}

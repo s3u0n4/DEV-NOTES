@@ -21,8 +21,14 @@ export default function Projects() {
             </div>
 
             <div className="links">
-              <a href="#">Code</a>
-              <a href="#">Live Demo</a>
+              <a href="#">
+                <img src="/sun/git.png" alt="git" />
+                Code
+              </a>
+              <a href="#">
+                <img src="/sun/share.png" alt="share" />
+                Live Demo
+              </a>
             </div>
           </article>
         ))}

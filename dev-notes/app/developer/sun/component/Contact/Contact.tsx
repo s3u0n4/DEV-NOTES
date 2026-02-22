@@ -15,22 +15,22 @@ export default function Contact() {
           </p>
           <div className="infoItem">
             <div className="iconCircle">
-              <img src="/shin/mail.png" alt="mail" />
+              <img src="/sun/mails.png" alt="mail" />
             </div>
             <div>
               <span className="infoTitle">Email</span>
-              <p>tlswndgk@gmail.com</p>
+              <p>s3u0n4@gmail.com</p>
             </div>
           </div>
 
           <div className="infoItem">
             <div className="iconCircle">
-              <img src="/shin/location.png" alt="location" />
+              <img src="/sun/location.png" alt="location" />
             </div>
 
             <div>
               <span className="infoTitle">Location</span>
-              <p>Ansan-si, Korea</p>
+              <p>hwasung-si, Korea</p>
             </div>
           </div>
         </div>

@@ -1,0 +1,110 @@
+.main {
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 24px;
+  text-align: center;
+
+  background-color: #fffbea;
+  color: #a883ff;
+}
+
+/* 상단 배지 */
+.main .badge {
+  margin-bottom: 18px;
+  padding: 10px 30px;
+
+  font-size: 20px;
+  font-weight: 500;
+
+  border-radius: 999px;
+  background: #ebe9f1;
+  color: #7f22fe;
+  border: 1px solid #dcdfe6;
+}
+
+/* 메인 타이틀 */
+.main h1 {
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+/* 설명 문단 */
+.main .description {
+  max-width: 720px;
+
+  font-size: 20px;
+  line-height: 1.7;
+  color: #99a1af;
+  margin-bottom: 50px;
+}
+
+/* 버튼 영역 */
+.main .actions {
+  display: flex;
+  gap: 60px;
+}
+
+/* 버튼 공통 */
+.main .btn {
+  min-width: 160px;
+  padding: 14px 40px;
+
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* primary 버튼 */
+.main .btn.primary {
+  background: #a683ff;
+  color: #ffffff;
+}
+
+.main .btn.primary:hover {
+  background: #bd87e6;
+  transform: translateY(-2px);
+}
+
+/* secondary 버튼 */
+.main .btn.secondary {
+  background-color: #fffefa;
+  color: #8023fe;
+  border: 1px solid #dcdfe6;
+  font-weight: bold;
+}
+
+.main .btn.secondary:hover {
+  background: rgba(186, 17, 205, 0.297);
+  transform: translateY(-2px);
+}
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+  .main h1 {
+    font-size: 34px;
+  }
+
+  .main .description {
+    font-size: 15px;
+  }
+
+  .main .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main .btn {
+    width: 100%;
+  }
+}

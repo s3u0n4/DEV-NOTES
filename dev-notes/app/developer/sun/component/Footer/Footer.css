@@ -1,0 +1,80 @@
+.footer {
+  background-color: #fffaea;
+}
+
+.footerInner {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 왼쪽 */
+.footerLogo {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #8e51ff;
+}
+
+.footerLogo span {
+  color: #8e51ff;
+  margin-right: 6px;
+}
+
+.footerLeft p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+/* 가운데 */
+.footerCenter h3,
+.footerRight h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #111858;
+}
+
+.footerCenter ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerCenter li {
+  margin-bottom: 10px;
+}
+
+.footerCenter a {
+  text-decoration: none;
+  color: #64748b;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.footerCenter a:hover {
+  color: #8e51ff;
+}
+
+/* 오른쪽 */
+.footerIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.footerIcons img {
+  width: 24px;
+  height: 24px;
+}
+
+.footerIcons a:hover {
+  transform: translateY(-3px);
+}
+
+/* 아래 구분선 + 카피라이트 */
+.footerBottom {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid #1e293b;
+  text-align: center;
+  font-size: 14px;
+}

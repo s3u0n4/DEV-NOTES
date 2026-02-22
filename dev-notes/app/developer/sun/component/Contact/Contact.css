@@ -1,0 +1,124 @@
+/* Contact 전체 래퍼 */
+.contactWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+
+  max-width: 1000px;
+  width: 100%;
+  text-align: left;
+}
+
+/* 왼쪽 정보 영역 */
+.contactInfo h3 {
+  font-size: 25px;
+  font-weight: 800;
+  color: #111828;
+}
+
+.contactInfo p {
+  font-size: 16px;
+  color: #636c76;
+  margin-bottom: 14px;
+}
+
+.infoItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.infoItem span {
+  font-size: 16px;
+  color: #111828;
+}
+.infoItem img {
+  width: 24px;
+  height: 24px;
+}
+
+.infoItem p {
+  color: #a1a1a1;
+  font-size: 14px;
+}
+
+.infoTitle {
+  font-weight: 600;
+  font-size: 14px;
+  color: #999;
+}
+
+.iconCircle {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: #f4eff2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 폼 영역 */
+/* 폼 영역 (오른쪽 박스 추가) */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px; /* 내부 여백 */
+  border-radius: 15px; /* 둥근 모서리 */
+  border: 1px solid #dcdfe6;
+  background: #fffdf2;
+}
+.contactForm h3 {
+  color: #111828;
+}
+
+/* 인풋 & 텍스트에어리어 */
+.contactForm input,
+.contactForm textarea {
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #dcdfe6;
+  font-size: 14px;
+}
+
+.contactForm textarea {
+  min-height: 140px;
+}
+
+/* 포커스 효과 */
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: #7d5391;
+}
+
+/* 버튼 */
+.contactForm button {
+  margin-top: 24px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: none;
+  background-color: #a683ff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contactForm button img {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  top: 2px;
+}
+
+.contactForm button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 24px rgba(194, 88, 223, 0.91);
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .contactWrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
