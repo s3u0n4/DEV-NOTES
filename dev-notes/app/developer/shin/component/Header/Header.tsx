@@ -19,14 +19,14 @@ export default function Header() {
   };
 
   return (
-    <header className="header">
-      <div className="headerInner">
-        <h1 className="logo">
+    <header className="shinHeader">
+      <div className="shinHeaderInner">
+        <h1 className="shinLogo">
           <Link href="/">&lt;/&gt; Developer Portfolio</Link>
         </h1>
 
-        <div className="navGroup">
-          <nav className="nav">
+        <div className="shinNavGroup">
+          <nav className="shinNav">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
@@ -36,10 +36,10 @@ export default function Header() {
 
           {/* 🔥 스위치 토글 */}
           <div
-            className={`toggleSwitch ${isSun ? "sun" : "shin"}`}
+            className={`shinToggleSwitch ${isSun ? "sun" : "shin"}`}
             onClick={toggleDeveloper}
           >
-            <div className="toggleCircle">
+            <div className="shinToggleCircle">
               <img src="../shin/mobile.png" alt="web" />
             </div>
           </div>

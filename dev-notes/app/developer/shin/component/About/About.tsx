@@ -1,12 +1,12 @@
 import "../About/About.css";
 export default function About() {
   return (
-    <section id="about" className="section">
-      <h2 className="sectionTitle">About Me</h2>
+    <section id="about" className="shinSection">
+      <h2 className="shinSectionTitle">About Me</h2>
 
-      <div className="aboutCards">
-        <div className="aboutCard">
-          <div className="img">
+      <div className="shinAboutCards">
+        <div className="shinAboutCard">
+          <div className="shinImg">
             <img src="../shin/AboutOne.png" alt="one" />
           </div>
 
@@ -18,8 +18,8 @@ export default function About() {
           </p>
         </div>
 
-        <div className="aboutCard">
-          <div className="img">
+        <div className="shinAboutCard">
+          <div className="shinImg">
             <img src="../shin/AboutTwo.png" alt="two" />
           </div>
 
@@ -31,8 +31,8 @@ export default function About() {
           </p>
         </div>
 
-        <div className="aboutCard">
-          <div className="img">
+        <div className="shinAboutCard">
+          <div className="shinImg">
             <img src="../shin/AboutThird.png" alt="third" />
           </div>
 
@@ -45,7 +45,7 @@ export default function About() {
         </div>
       </div>
 
-      <p className="aboutDescription">
+      <p className="shinAboutDescription">
         저는 문제를 바로 해결하기보다, 먼저 흐름과 구조를 이해하는 개발자입니다.
         <br />
         새로운 기술이 등장할 때마다 무작정 사용하기보다는, 왜 필요한지 그리고

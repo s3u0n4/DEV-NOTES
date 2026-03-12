@@ -3,7 +3,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 64px;
-
   max-width: 1000px;
   width: 100%;
   text-align: left;

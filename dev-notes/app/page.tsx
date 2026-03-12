@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="container">
-      <header className="header">
+      <header className="homeHeader">
         <h1 className="title">
           <span>
             Choose Your <em>Developer</em>
@@ -51,7 +51,7 @@ export default function Home() {
         </Link>
       </section>
 
-      <footer className="footer">CLICK TO SELECT</footer>
+      <footer className="homeFooter">CLICK TO SELECT</footer>
     </main>
   );
 }

@@ -1,4 +1,4 @@
-.main {
+.shinMain {
   min-height: 100vh;
   width: 100%;
 
@@ -15,7 +15,7 @@
 }
 
 /* 상단 배지 */
-.main .badge {
+.shinBadge {
   margin-bottom: 18px;
   padding: 10px 30px;
 
@@ -27,14 +27,14 @@
 }
 
 /* 메인 타이틀 */
-.main h1 {
+.shinMain h1 {
   font-size: 60px;
-
   margin-bottom: 24px;
+  color: #ffffff;
 }
 
 /* 설명 문단 */
-.main .description {
+.shinDescription {
   max-width: 720px;
 
   font-size: 20px;
@@ -44,63 +44,74 @@
 }
 
 /* 버튼 영역 */
-.main .actions {
+.shinActions {
   display: flex;
-  gap: 60px;
+  gap: 24px;
 }
 
-/* 버튼 공통 */
-.main .btn {
+/* Primary 버튼 */
+.shinBtnPrimary {
   min-width: 160px;
   padding: 14px 40px;
 
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   text-decoration: none;
 
   border-radius: 10px;
-  cursor: pointer;
+
+  background: #f6339a;
+  color: #ffffff;
+
   transition: all 0.25s ease;
 }
 
-/* primary 버튼 */
-.main .btn.primary {
-  background: #f6339a;
-  color: #ffffff;
-}
-
-.main .btn.primary:hover {
-  background: #4f46e5;
+.shinBtnPrimary:hover {
   transform: translateY(-2px);
+  background: #4f46e5;
 }
 
-/* secondary 버튼 */
-.main .btn.secondary {
+/* Secondary 버튼 */
+.shinBtnSecondary {
+  min-width: 160px;
+  padding: 14px 40px;
+
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+
+  border-radius: 10px;
+
   background-color: #1e2939;
   color: #ffffff;
+
   border: 1px solid rgba(255, 255, 255, 0.25);
+
+  transition: all 0.25s ease;
 }
 
-.main .btn.secondary:hover {
+.shinBtnSecondary:hover {
   background: rgba(255, 255, 255, 0.08);
 }
 
-/* 모바일 대응 */
+/* 모바일 */
 @media (max-width: 768px) {
-  .main h1 {
-    font-size: 34px;
+  .shinMain h1 {
+    font-size: 36px;
   }
 
-  .main .description {
-    font-size: 15px;
+  .shinDescription {
+    font-size: 16px;
   }
 
-  .main .actions {
+  .shinActions {
     flex-direction: column;
     width: 100%;
+    gap: 16px;
   }
 
-  .main .btn {
+  .shinBtnPrimary,
+  .shinBtnSecondary {
     width: 100%;
   }
 }
