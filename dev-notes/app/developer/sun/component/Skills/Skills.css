@@ -1,25 +1,28 @@
-/* 공통 section / sectionTitle 은 About에서 이미 사용 중이라고 가정 */
-
+.sunSkillSection {
+  background-color: #fffbea;
+  padding: 120px;
+}
 /* 스킬 그리드 */
 .skillGrid {
   display: grid;
   grid-template-columns: repeat(3, 300px);
   gap: 27px;
-  margin-top: 40px;
   text-align: left;
+  justify-content: center;
 }
 
 /* 스킬 카드 */
 .skillCard {
   padding: 20px 24px;
   border-radius: 10px;
-  background: #fffdf2;
+  background: hsl(17, 37%, 96%);
   border: 1px solid #dcdfe6;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .skillCard:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 30px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.2);
 }
 
 /* 카테고리 제목 */

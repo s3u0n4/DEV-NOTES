@@ -1,7 +1,7 @@
 import "../Blog/Blog.css";
 export default function Blog() {
   return (
-    <section id="blog" className="section">
+    <section id="blog" className="sunBlogSection">
       <h2 className="sectionTitle">Latest Blog Posts</h2>
 
       <div className="blogGrid">

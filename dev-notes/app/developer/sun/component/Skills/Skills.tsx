@@ -1,7 +1,7 @@
 import "../Skills/Skills.css";
 export default function Skills() {
   return (
-    <section id="skills" className="section">
+    <section id="skills" className="sunSkillSection">
       <h2 className="sectionTitle">Skills & Technologies</h2>
 
       <div className="skillGrid">

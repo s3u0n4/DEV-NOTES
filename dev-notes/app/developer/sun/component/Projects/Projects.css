@@ -1,3 +1,13 @@
+.sunProjectSection {
+  width: 100%;
+
+  padding: 120px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff9df;
+}
 /* 프로젝트 그리드 */
 .projectGrid {
   display: grid;

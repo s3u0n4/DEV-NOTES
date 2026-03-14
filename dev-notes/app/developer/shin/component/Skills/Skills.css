@@ -1,62 +1,99 @@
-/* 공통 section / sectionTitle 은 About에서 이미 사용 중이라고 가정 */
+/* 전체 섹션 */
+.shinSkillsSection {
+  width: 100%;
 
-/* 스킬 그리드 */
-.skillGrid {
+  padding: 120px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #030712;
+  text-align: center;
+}
+
+/* 섹션 타이틀 */
+.shinSectionTitle {
+  position: relative;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.shinSectionTitle::after {
+  content: "";
+  display: block;
+
+  width: 80px;
+  height: 4px;
+
+  background: #f6339a;
+
+  margin: 16px auto 0;
+}
+
+/* 스킬 카드 그리드 */
+.shinSkillGrid {
   display: grid;
-  grid-template-columns: repeat(3, 300px);
-  gap: 27px;
-  margin-top: 40px;
+  grid-template-columns: repeat(3, 280px);
+  gap: 32px;
+}
+
+/* 카드 */
+.shinSkillCard {
+  padding: 28px 32px;
+
+  background: linear-gradient(180deg, #151a2b, #0d1120);
+
+  border-radius: 14px;
+  border: 1px solid #282c34;
+
   text-align: left;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* 스킬 카드 */
-.skillCard {
-  padding: 20px 24px;
-  border-radius: 10px;
-  background: #151c2b;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.skillCard:hover {
+/* hover 효과 */
+.shinSkillCard:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 30px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 0 30px rgba(246, 51, 154, 0.25);
 }
 
-/* 카테고리 제목 */
-.skillCard h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
+/* 카드 제목 */
+.shinSkillCard h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
   color: #fc64b6;
 }
 
 /* 기술 태그 */
-.skillCard span {
+.shinSkillCard span {
   display: inline-block;
-  margin: 3px;
-  padding: 8px 16px;
-  font-size: 14px;
 
-  color: #b9bec6;
-  background: #232c3c;
-  border-radius: 10px;
+  padding: 6px 12px;
+  margin: 4px;
+
+  font-size: 13px;
+
+  border-radius: 6px;
+
+  background: #1e293b;
+  color: #d1d5db;
+  border: 1px solid #4a5565;
 }
 
 /* 반응형 */
 @media (max-width: 1024px) {
-  .skillGrid {
+  .shinSkillGrid {
     grid-template-columns: repeat(2, 280px);
   }
 }
 
 @media (max-width: 768px) {
-  .skillGrid {
+  .shinSkillGrid {
     grid-template-columns: 1fr;
   }
 
-  .skillCard {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
+  .shinSectionTitle {
+    font-size: 30px;
   }
 }

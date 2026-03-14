@@ -1,7 +1,7 @@
 import "../Projects/Projects.css";
 export default function Projects() {
   return (
-    <section id="projects" className="section">
+    <section id="projects" className="sunProjectSection">
       <h2 className="sectionTitle">Projects</h2>
 
       <div className="projectGrid">

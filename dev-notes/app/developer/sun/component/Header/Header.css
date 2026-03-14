@@ -4,50 +4,54 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fffbea;
   border-bottom: 1px solid #dcdfe6;
   z-index: 9999;
   isolation: isolate;
+  background-color: #fffbea;
 }
 
 /* 내부 컨테이너 */
 .headerInner {
-  padding: 0px 100px;
+  padding: 0 80px;
+  height: 70px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.headerInner h1 {
-  font-size: 20px;
-}
-
-/* 로고 영역 */
+/* 로고 */
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
   color: #7f22fe;
 }
+
 .logo a {
   text-decoration: none;
+  font-size: 20px;
 }
-/* 네비 / 토글 영역 */
+
+/* nav + toggle */
 .navGroup {
   display: flex;
   align-items: center;
   gap: 20px;
+
   padding: 10px 20px;
   border-radius: 50px;
+
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
-  margin-left: 120px;
 }
 
+/* nav */
 .nav {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
+
   font-size: 18px;
 }
 
@@ -55,12 +59,16 @@
   color: #364153;
   text-decoration: none;
 }
-/* 토글 전체 */
+
+/* 토글 */
 .toggleSwitch {
   background-color: #ddd6ff;
+
   width: 60px;
   height: 34px;
+
   border-radius: 999px;
+
   position: relative;
   cursor: pointer;
 }
@@ -69,35 +77,48 @@
 .toggleCircle {
   width: 30px;
   height: 30px;
+
   border-radius: 50%;
+
   position: absolute;
   top: 2px;
   left: 3px;
+
   transition: transform 0.35s ease;
+
   background-color: #8e51ff;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .toggleCircle img {
   width: 20px;
   height: 20px;
 }
 
-/* 🔥 sun 페이지 → 왼쪽 */
+/* 토글 위치 */
 .toggleSwitch.sun .toggleCircle {
   transform: translateX(0);
 }
 
-/* 🔥 shin 페이지 → 오른쪽 */
 .toggleSwitch.shin .toggleCircle {
   transform: translateX(36px);
 }
-
-/* 모바일 대응 */
 @media (max-width: 768px) {
+  .headerInner {
+    padding: 0 20px;
+  }
+
+  /* nav 숨김 */
   .nav {
-    gap: 8px;
+    display: none;
+  }
+
+  /* navGroup 밀림 제거 */
+  .navGroup {
+    margin-left: 0;
   }
 
   .logo {

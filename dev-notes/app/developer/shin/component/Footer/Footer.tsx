@@ -2,13 +2,14 @@ import "../Footer/Footer.css";
 
 export default function Footer() {
   return (
-    <footer className="footer">
-      <div className="footerInner">
+    <footer className="shinFooter">
+      <div className="shinFooterInner">
         {/* 왼쪽 */}
-        <div className="footerLeft">
-          <h2 className="footerLogo">
+        <div className="shinFooterLeft">
+          <h2 className="shinFooterLogo">
             <span>&lt;/&gt;</span> Developer Portfolio
           </h2>
+
           <p>
             코드보다 먼저 흐름을 설계합니다.
             <br />
@@ -17,18 +18,22 @@ export default function Footer() {
         </div>
 
         {/* 가운데 */}
-        <div className="footerCenter">
+        <div className="shinFooterCenter">
           <h3>Quick Links</h3>
+
           <ul>
             <li>
               <a href="#about">About</a>
             </li>
+
             <li>
               <a href="#projects">Projects</a>
             </li>
+
             <li>
               <a href="#blog">Blog</a>
             </li>
+
             <li>
               <a href="#contact">Contact</a>
             </li>
@@ -36,12 +41,14 @@ export default function Footer() {
         </div>
 
         {/* 오른쪽 */}
-        <div className="footerRight">
+        <div className="shinFooterRight">
           <h3>Connect</h3>
-          <div className="footerIcons">
+
+          <div className="shinFooterIcons">
             <a href="#">
               <img src="/github.png" alt="github" />
             </a>
+
             <a href="#">
               <img src="/mail.png" alt="mail" />
             </a>
@@ -49,7 +56,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="footerBottom">
+      <div className="shinFooterBottom">
         © 2026 Jungha Shin. All rights reserved.
       </div>
     </footer>

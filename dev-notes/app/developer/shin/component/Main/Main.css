@@ -23,20 +23,19 @@
   font-weight: 500;
 
   border-radius: 999px;
-  background: #471636;
+  background: #1d0d1f;
 }
 
 /* 메인 타이틀 */
 .shinMain h1 {
   font-size: 60px;
   margin-bottom: 24px;
-  color: #ffffff;
+  color: #fc64b6;
 }
 
 /* 설명 문단 */
 .shinDescription {
   max-width: 720px;
-
   font-size: 20px;
   line-height: 1.7;
   color: #99a1af;
@@ -54,7 +53,7 @@
   min-width: 160px;
   padding: 14px 40px;
 
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   text-decoration: none;
 

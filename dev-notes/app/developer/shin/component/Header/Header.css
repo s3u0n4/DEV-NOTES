@@ -10,28 +10,20 @@
   isolation: isolate;
 }
 
-/* 내부 컨테이너 */
+/* 내부 */
 .shinHeaderInner {
-  padding: 0 100px;
+  padding: 0 80;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.shinHeaderInner h1 {
-  font-size: 20px;
-}
-
 /* 로고 */
-.shinLogo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .shinLogo a {
   text-decoration: none;
   color: #fc64b3;
+  font-size: 20px;
 }
 
 /* nav + toggle */
@@ -39,13 +31,12 @@
   display: flex;
   align-items: center;
   gap: 20px;
+
   padding: 10px 20px;
   border-radius: 50px;
-  backdrop-filter: blur(10px);
-  margin-left: 120px;
 }
 
-/* 네비게이션 */
+/* nav */
 .shinNav {
   display: flex;
   align-items: center;
@@ -58,7 +49,7 @@
   text-decoration: none;
 }
 
-/* 토글 스위치 */
+/* 토글 */
 .shinToggleSwitch {
   background-color: #364152;
   width: 60px;
@@ -85,33 +76,35 @@
   transition: transform 0.35s ease;
 }
 
-/* 토글 아이콘 */
 .shinToggleCircle img {
   height: 20px;
 }
 
-/* sun 페이지 → 왼쪽 */
+/* 토글 이동 */
 .shinToggleSwitch.sun .shinToggleCircle {
   transform: translateX(0);
 }
 
-/* shin 페이지 → 오른쪽 */
 .shinToggleSwitch.shin .shinToggleCircle {
   transform: translateX(26px);
 }
 
-/* 모바일 */
 @media (max-width: 768px) {
   .shinHeaderInner {
     padding: 0 20px;
   }
 
+  /* nav 숨기기 */
   .shinNav {
-    gap: 8px;
-    font-size: 14px;
+    display: none;
   }
 
-  .shinLogo {
+  /* navGroup 밀림 제거 */
+  .shinNavGroup {
+    margin-left: 0;
+  }
+
+  .shinLogo a {
     font-size: 16px;
   }
 }

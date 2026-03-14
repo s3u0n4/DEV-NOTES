@@ -1,7 +1,7 @@
 import "../Contact/Contact.css";
 export default function Contact() {
   return (
-    <section id="contact" className="section">
+    <section id="contact" className="sunContactSection">
       <h2 className="sectionTitle">Get In Touch</h2>
 
       <div className="contactWrapper">

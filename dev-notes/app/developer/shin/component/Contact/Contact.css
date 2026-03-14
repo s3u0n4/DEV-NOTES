@@ -1,130 +1,182 @@
-/* Contact 전체 래퍼 */
-.contactWrapper {
+/* 전체 섹션 */
+.shinContactSection {
+  min-height: 100vh;
+  width: 100%;
+
+  padding: 120px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #0a0f1d;
+}
+
+/* 제목 */
+.shinContactTitle {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 64px;
+}
+
+.shinContactTitle::after {
+  content: "";
+  display: block;
+
+  width: 80px;
+  height: 4px;
+
+  background: #f6339a;
+
+  margin: 16px auto 0;
+}
+
+/* 전체 레이아웃 */
+.shinContactWrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 64px;
 
   max-width: 1000px;
   width: 100%;
+
   text-align: left;
 }
 
 /* 왼쪽 정보 영역 */
-.contactInfo h3 {
-  font-size: 25px;
+.shinContactInfo h3 {
+  font-size: 26px;
   font-weight: 800;
+  margin-bottom: 10px;
 }
 
-.contactInfo p {
+.shinContactInfo p {
   font-size: 16px;
-  color: #99a1af;
-  margin-bottom: 14px;
+  color: #9ca3af;
+  margin-bottom: 24px;
 }
 
-.infoItem {
+/* 정보 아이템 */
+.shinInfoItem {
   display: flex;
   align-items: flex-start;
   gap: 16px;
   margin-bottom: 24px;
 }
-.infoItem span {
-  font-size: 16px;
-  color: #fff;
-}
-.infoItem img {
-  width: 24px;
-  height: 24px;
-}
 
-.infoItem p {
+.shinInfoItem p {
   color: #a1a1a1;
   font-size: 14px;
 }
 
-.infoTitle {
+.shinInfoTitle {
   font-weight: 600;
   font-size: 14px;
-  color: #999;
 }
 
-.iconCircle {
+/* 아이콘 */
+.shinIconCircle {
   width: 48px;
   height: 48px;
+
   border-radius: 10px;
-  background: #231529; /* 연한 핑크 배경 */
+
+  background: #231529;
 
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.shinIconCircle img {
+  width: 22px;
+  height: 22px;
+}
+
 /* 폼 영역 */
-/* 폼 영역 (오른쪽 박스 추가) */
-.contactForm {
+.shinContactForm {
   display: flex;
   flex-direction: column;
 
-  padding: 30px 40px; /* 내부 여백 */
-  border-radius: 15px; /* 둥근 모서리 */
-  border: 1px solid rgba(255, 255, 255, 0.1); /* 테두리 */
-  background: rgba(35, 39, 48, 0.4); /* 살짝 투명 배경 */
+  padding: 32px 40px;
+
+  border-radius: 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  background: #151c2b;
 }
 
-/* 인풋 & 텍스트에어리어 */
-.contactForm input,
-.contactForm textarea {
+/* input textarea */
+.shinContactForm input,
+.shinContactForm textarea {
   width: 100%;
   padding: 14px 16px;
 
+  margin-bottom: 16px;
+
   border-radius: 10px;
+
   border: 1px solid rgba(255, 255, 255, 0.15);
 
   background: rgba(15, 23, 42, 0.6);
-  color: #fff;
+
+  color: white;
 
   font-size: 14px;
+
   outline: none;
 
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: border-color 0.2s ease;
 }
 
-.contactForm textarea {
+.shinContactForm textarea {
   min-height: 140px;
 }
 
-/* 포커스 효과 */
-.contactForm input:focus,
-.contactForm textarea:focus {
+/* focus */
+.shinContactForm input:focus,
+.shinContactForm textarea:focus {
   border-color: #fc64b6;
 }
 
 /* 버튼 */
-.contactForm button {
-  margin-top: 24px;
+.shinContactForm button {
+  margin-top: 16px;
+
   padding: 14px 18px;
+
   border-radius: 10px;
   border: none;
-  background-color: #f6339a;
-  color: #fff;
+
+  background: #f6339a;
+
+  color: white;
+
   font-size: 14px;
+
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.contactForm button img {
+.shinContactForm button img {
   width: 14px;
-  height: 14px;
-  position: relative;
-  top: 2px;
 }
 
-.contactForm button:hover {
+.shinContactForm button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 24px rgba(244, 3, 200, 0.91);
+  box-shadow: 0 0 24px rgba(244, 3, 200, 0.8);
 }
 
 /* 반응형 */
 @media (max-width: 900px) {
-  .contactWrapper {
+  .shinContactWrapper {
     grid-template-columns: 1fr;
     gap: 40px;
   }
