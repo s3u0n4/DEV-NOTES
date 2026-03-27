@@ -149,6 +149,25 @@
   color: #f9a8d4;
 }
 
+.shinPosts {
+  border: 1px solid #353434c5;
+  border-radius: 10px;
+  background-color: #151c2b;
+  margin-top: 50px;
+  padding: 12px 30px;
+  color: #9ca3af;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.5s ease, box-shadow 0.25s ease;
+}
+
+.shinPosts:hover {
+  color: #f9a8d4;
+  transition: color 0.2s ease;
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px rgba(246, 51, 154, 0.25);
+}
+
 /* 반응형 */
 @media (max-width: 1200px) {
   .shinBlogGrid {

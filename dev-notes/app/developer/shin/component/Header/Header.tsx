@@ -40,7 +40,7 @@ export default function Header() {
             onClick={toggleDeveloper}
           >
             <div className="shinToggleCircle">
-              <img src="../shin/mobile.png" alt="web" />
+              <img src="/shin/shinMobile.png" alt="web" />
             </div>
           </div>
         </div>

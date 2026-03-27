@@ -40,7 +40,7 @@ export default function Header() {
             onClick={toggleDeveloper}
           >
             <div className="toggleCircle">
-              <img src="../sun/web.png" alt="web" />
+              <img src="../sun/sunWeb.png" alt="web" />
             </div>
           </div>
         </div>

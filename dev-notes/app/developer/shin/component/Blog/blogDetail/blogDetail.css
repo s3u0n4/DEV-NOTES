@@ -1,0 +1,272 @@
+.blog {
+  background: #020817;
+  min-height: 100vh;
+}
+
+/* hero */
+
+.blogHero {
+  text-align: center;
+  padding: 120px 20px 80px;
+}
+
+.blogHeroTitle {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.blogHeroDesc {
+  color: #94a3b8;
+  margin-top: 20px;
+}
+
+.blogHeroDivider {
+  width: 100px;
+  height: 4px;
+  background: #ec4899;
+  margin: 30px auto;
+}
+
+/* layout */
+
+.blogContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.blogSidebar {
+  width: 280px;
+}
+
+.blogMain {
+  flex: 1;
+}
+
+/* toolbar */
+
+.blogToolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: #94a3b8;
+}
+
+.writeBtn {
+  background: #ec4899;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* grid */
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* card */
+
+.postCard {
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #151a2b, #0d1120);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.postCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px rgba(244, 9, 134, 0.25);
+}
+
+.postImage {
+  position: relative;
+  height: 220px;
+}
+
+.postImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.postCategory {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #ec4899;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.postBody {
+  padding: 20px;
+}
+
+.postMeta {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.postMeta img {
+  width: 15px;
+  height: 15px;
+}
+
+.postTitle {
+  font-size: 20px;
+}
+
+.shinPostReadMore {
+  font-size: 15px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  color: #fb64b6;
+
+  transition: color 0.2s ease;
+}
+
+.shinPostReadMore:hover {
+  color: #f9a8d4;
+}
+
+/* sidebar */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebarCard {
+  background: linear-gradient(180deg, #151a2b, #0d1120);
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 14px 16px;
+}
+
+.sidebarTitle {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+/* 검색창을 감싸는 부모 */
+.searchWrapper {
+  position: relative;
+}
+
+/* 돋보기 아이콘 스타일 */
+.searchIcon {
+  position: absolute;
+  left: 12px; /* 왼쪽 적당한 위치 */
+  top: 50%; /* 세로 중앙 */
+  transform: translateY(-50%); /* 정확히 가운데 정렬 */
+  width: 16px; /* 아이콘 크기 */
+  height: 16px;
+  color: #64748b; /* 아이콘 색상 (회색조) */
+  pointer-events: none; /* 아이콘을 클릭해도 인풋이 선택되도록 함 */
+}
+
+/* 인풋 필드 스타일 */
+.searchInput {
+  width: 100%;
+  background-color: #11182acf; /* 피그마의 어두운 배경색 */
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 10px 12px 10px 40px; /* ★ 중요: 왼쪽 패딩을 40px 주어 글자가 아이콘과 안 겹치게 함 */
+  color: white;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.searchInput:focus {
+  border-color: #ec4899; /* 포커스 시 핑크색 강조 */
+}
+
+.categoryList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.categoryItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background-color: #0f172a; /* 기본 배경 어둡게 */
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.categoryItem:hover {
+  border-color: #4b5563;
+  color: #ffffff;
+}
+
+/* 피그마 시안의 Active 스타일: 핑크색 테두리와 은은한 배경 */
+.categoryItem.active {
+  border-color: #ec4899;
+  background-color: rgba(236, 72, 153, 0.1); /* 투명한 핑크 배경 */
+  color: #ec4899;
+}
+
+.categoryCount {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* --- 🆕 Blog Stats Styles --- */
+.statBar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* 아이템 간 간격 */
+  border: 1px solid #334155;
+  padding: 10px 14px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #151a2b, #0d1120);
+}
+
+.statsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 왼쪽 정렬 */
+}
+
+/* 핑크색 강조 숫자 */
+.statsNumber {
+  font-size: 25px;
+  font-weight: 400;
+  color: #f465ad; /* 핑크색 */
+  margin-bottom: 6px;
+}
+
+/* 회색 설명 글 */
+.statsLabel {
+  font-size: 14px;
+  color: #94a3b8; /* 흐린 회색 */
+}
+
+/* 하얀색 구분선 (스크린샷처럼) */
+.statsDivider {
+  width: 100%;
+  height: 2px;
+  background-color: #f6f6f6; /* 하얀색에 가까운 회색 */
+  opacity: 0.1; /* 너무 튀지 않게 투명도 조절 */
+}

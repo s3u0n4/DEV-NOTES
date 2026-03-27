@@ -1,4 +1,5 @@
-import "../Blog/Blog.css";
+import Link from "next/link";
+import "./Blog.css";
 
 export default function Blog() {
   return (
@@ -33,6 +34,12 @@ export default function Blog() {
           </article>
         ))}
       </div>
+      <Link
+        href="/developer/shin/component/blog/blogDetail"
+        className="shinPosts"
+      >
+        View all posts
+      </Link>
     </section>
   );
 }
