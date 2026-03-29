@@ -1,0 +1,281 @@
+.shinCreateContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 0px;
+  color: #e2e8f0;
+  transition: max-width 0.4s ease;
+}
+
+.shinCreateContainer.shinPreviewActive {
+  max-width: 1400px;
+}
+
+.shinFormPreviewLayout {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+/* Header */
+.shinCreateHeaderSection {
+  margin-bottom: 30px;
+}
+.shinBackLink {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 14px;
+}
+.shinMainTitle {
+  font-size: 36px;
+  margin: 10px 0;
+  font-weight: 700;
+}
+.shinTitleUnderline {
+  width: 60px;
+  height: 4px;
+  background-color: #ec4899;
+}
+
+.shinPreviewTopBar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.shinPreviewBtn {
+  background-color: #1e293b;
+  color: #cbd5e1;
+  border: 1px solid #334155;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.shinSize6 {
+  width: 18px;
+  height: 18px;
+}
+
+/* Form Card (왼쪽) */
+.shinFormCard {
+  flex: 1;
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.shinSectionTitle {
+  font-size: 18px;
+  color: #f1f5f9;
+  margin-bottom: 10px;
+}
+
+.shinInputField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.shinInputField label {
+  font-size: 14px;
+  color: #94a3b8;
+}
+.shinInputField input,
+.shinInputField select,
+.shinExcerptArea {
+  background-color: #111828;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  font-size: 15px;
+  outline: none;
+}
+.shinInputField input:focus,
+.shinExcerptArea:focus,
+.shinContentArea:focus {
+  border-color: #ec4899;
+}
+
+.shinIconInput {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.shinInputIcon {
+  position: absolute;
+  left: 12px;
+  color: #64748b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shinIconInput input {
+  padding-left: 40px;
+  width: 100%;
+}
+.shinExcerptArea {
+  min-height: 100px;
+  resize: none;
+  border: 1px solid #334155;
+}
+
+/* Content Area */
+.shinContentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.shinContentTools {
+  display: flex;
+  gap: 8px;
+}
+.shinToolBtn {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  color: #cbd5e1;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.shinTextBlockContainer {
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 16px;
+}
+.shinBlockHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+.shinTIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.shinBlockActions span {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.shinContentArea {
+  width: 100%;
+  min-height: 250px;
+  background-color: #111828;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  outline: none;
+}
+
+/* Preview Card (오른쪽) */
+.shinPreviewCard {
+  flex: 1;
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 32px;
+  position: sticky;
+  top: 100px;
+}
+.shinBlogPostPreviewCard {
+  background-color: #11141b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.shinThumbnailPreviewBox {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: #1e293b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+}
+.shinThumbnailPreviewBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.shinNoThumbnail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: #64748b;
+}
+
+.shinPostInfoPreview {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.shinPostDateRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  font-size: 14px;
+}
+.shinPostTitlePreview {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f1f5f9;
+}
+.shinPostExcerptPreview {
+  font-size: 15px;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+.shinBottomSeparator {
+  height: 1px;
+  background-color: #334155;
+  margin-top: 10px;
+}
+
+/* Footer Buttons */
+.shinFormFooter {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.shinSaveBtn {
+  flex: 1;
+  background-color: #ec4899;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.shinCancelBtn {
+  background-color: #334155;
+  color: #f1f5f9;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}

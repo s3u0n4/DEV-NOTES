@@ -8,6 +8,7 @@
   z-index: 9999;
   isolation: isolate;
   background-color: #fffbea;
+  padding: 0px 400px;
 }
 
 /* 내부 컨테이너 */

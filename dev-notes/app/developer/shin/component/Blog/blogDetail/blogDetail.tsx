@@ -28,38 +28,38 @@ const MOCK_DATA = [
 
 export default function BlogDetail() {
   return (
-    <div className="blog">
-      {/* HERO */}
-      <div className="blogHero">
-        <h1 className="blogHeroTitle">Blog Posts</h1>
-
-        <p className="blogHeroDesc">
+    <div className="shinBlog">
+      {/* HERO SECTION */}
+      <div className="shinBlogHero">
+        <h1 className="shinBlogHeroTitle">Blog Posts</h1>
+        <p className="shinBlogHeroDesc">
           Insights, tutorials, and thoughts on web development, architecture,
           and technology
         </p>
-
-        <div className="blogHeroDivider" />
+        <div className="shinBlogHeroDivider" />
       </div>
 
-      {/* CONTENT */}
-      <div className="blogContainer">
-        <aside className="blogSidebar">
+      {/* CONTENT SECTION */}
+      <div className="shinBlogContainer">
+        <aside className="shinBlogSidebar">
           <Sidebar />
         </aside>
 
-        <main className="blogMain">
-          <div className="blogToolbar">
-            <span>Showing {MOCK_DATA.length} posts</span>
+        <main className="shinBlogMain">
+          <div className="shinBlogToolbar">
+            <span className="shinPostCount">
+              Showing {MOCK_DATA.length} posts
+            </span>
 
             <Link
               href="/developer/shin/component/blog/blogDetail/createPost"
-              className="writeBtn"
+              className="shinWriteBtn"
             >
               + Write Post
             </Link>
           </div>
 
-          <div className="blogGrid">
+          <div className="shinBlogGrid">
             {MOCK_DATA.map((post) => (
               <PostCard key={post.id} post={post} />
             ))}

@@ -1,60 +1,69 @@
-.blog {
+/* 전체 배경 및 컨테이너 */
+.shinBlog {
   background: #020817;
   min-height: 100vh;
+  color: #f1f5f9;
 }
 
-/* hero */
-
-.blogHero {
+/* Hero Section */
+.shinBlogHero {
   text-align: center;
   padding: 120px 20px 80px;
 }
 
-.blogHeroTitle {
+.shinBlogHeroTitle {
   font-size: 50px;
   font-weight: 400;
+  color: white;
 }
 
-.blogHeroDesc {
+.shinBlogHeroDesc {
   color: #94a3b8;
   margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.blogHeroDivider {
+.shinBlogHeroDivider {
   width: 100px;
   height: 4px;
   background: #ec4899;
   margin: 30px auto;
 }
 
-/* layout */
-
-.blogContainer {
-  max-width: 1200px;
+/* Layout */
+.shinBlogContainer {
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   gap: 40px;
   padding: 40px 20px;
 }
 
-.blogSidebar {
+.shinBlogSidebar {
   width: 280px;
+  flex-shrink: 0;
 }
 
-.blogMain {
+.shinBlogMain {
   flex: 1;
 }
 
-/* toolbar */
-
-.blogToolbar {
+/* Toolbar */
+.shinBlogToolbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
   color: #94a3b8;
 }
 
-.writeBtn {
+.shinPostCount {
+  font-size: 14px;
+}
+
+.shinWriteBtn {
   background: #ec4899;
   border: none;
   padding: 14px 20px;
@@ -63,19 +72,23 @@
   cursor: pointer;
   font-size: 16px;
   text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
 }
 
-/* grid */
+.shinWriteBtn:hover {
+  background: #db2777;
+}
 
-.blogGrid {
+/* Grid */
+.shinBlogGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
-/* card */
-
-.postCard {
+/* Post Card */
+.shinPostCard {
   border: 1px solid #1e293b;
   border-radius: 16px;
   overflow: hidden;
@@ -83,131 +96,144 @@
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.postCard:hover {
+.shinPostCard:hover {
   transform: translateY(-8px);
   box-shadow: 0 0 40px rgba(244, 9, 134, 0.25);
+  border-color: #ec4899;
 }
 
-.postImage {
+.shinPostImage {
   position: relative;
   height: 220px;
 }
 
-.postImage img {
+.shinPostImage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.postCategory {
+.shinPostCategory {
   position: absolute;
   top: 12px;
   left: 12px;
   background: #ec4899;
+  color: white;
   padding: 4px 10px;
   border-radius: 999px;
   font-size: 12px;
+  font-weight: 600;
 }
 
-.postBody {
+.shinPostBody {
   padding: 20px;
 }
 
-.postMeta {
+.shinPostMeta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-size: 12px;
   color: #94a3b8;
   margin-bottom: 8px;
 }
 
-.postMeta img {
+.shinMetaIcon {
   width: 15px;
   height: 15px;
 }
 
-.postTitle {
+.shinPostTitle {
   font-size: 20px;
+  margin-bottom: 10px;
+  color: #f1f5f9;
+}
+
+.shinPostDesc {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 .shinPostReadMore {
   font-size: 15px;
   font-weight: 600;
-
   text-decoration: none;
-
   color: #fb64b6;
-
   transition: color 0.2s ease;
 }
 
 .shinPostReadMore:hover {
   color: #f9a8d4;
+  text-decoration: underline;
 }
 
-/* sidebar */
-
-.sidebar {
+/* Sidebar */
+.shinSidebar {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.sidebarCard {
+.shinSidebarCard {
   background: linear-gradient(180deg, #151a2b, #0d1120);
   border: 1px solid #1e293b;
   border-radius: 16px;
   padding: 14px 16px;
 }
 
-.sidebarTitle {
+.shinSidebarTitle {
   font-size: 14px;
   margin-bottom: 16px;
+  color: #f1f5f9;
+  font-weight: 600;
 }
 
-/* 검색창을 감싸는 부모 */
-.searchWrapper {
+/* Search Box */
+.shinSearchWrapper {
   position: relative;
 }
 
-/* 돋보기 아이콘 스타일 */
-.searchIcon {
+.shinSearchIcon {
   position: absolute;
-  left: 12px; /* 왼쪽 적당한 위치 */
-  top: 50%; /* 세로 중앙 */
-  transform: translateY(-50%); /* 정확히 가운데 정렬 */
-  width: 16px; /* 아이콘 크기 */
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
   height: 16px;
-  color: #64748b; /* 아이콘 색상 (회색조) */
-  pointer-events: none; /* 아이콘을 클릭해도 인풋이 선택되도록 함 */
+  color: #64748b;
+  pointer-events: none;
 }
 
-/* 인풋 필드 스타일 */
-.searchInput {
+.shinSearchInput {
   width: 100%;
-  background-color: #11182acf; /* 피그마의 어두운 배경색 */
+  background-color: #11182acf;
   border: 1px solid #334155;
   border-radius: 8px;
-  padding: 10px 12px 10px 40px; /* ★ 중요: 왼쪽 패딩을 40px 주어 글자가 아이콘과 안 겹치게 함 */
+  padding: 10px 12px 10px 40px;
   color: white;
   outline: none;
   transition: border-color 0.2s;
 }
 
-.searchInput:focus {
-  border-color: #ec4899; /* 포커스 시 핑크색 강조 */
+.shinSearchInput:focus {
+  border-color: #ec4899;
 }
 
-.categoryList {
+/* Category List */
+.shinCategoryList {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.categoryItem {
+.shinCategoryItem {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 14px;
-  background-color: #0f172a; /* 기본 배경 어둡게 */
+  background-color: #0f172a;
   border: 1px solid #334155;
   border-radius: 8px;
   color: #94a3b8;
@@ -215,58 +241,62 @@
   transition: all 0.2s ease;
 }
 
-.categoryItem:hover {
+.shinCategoryItem:hover {
   border-color: #4b5563;
   color: #ffffff;
 }
 
-/* 피그마 시안의 Active 스타일: 핑크색 테두리와 은은한 배경 */
-.categoryItem.active {
+.shinCategoryItem.shinActive {
   border-color: #ec4899;
-  background-color: rgba(236, 72, 153, 0.1); /* 투명한 핑크 배경 */
+  background-color: rgba(236, 72, 153, 0.1);
   color: #ec4899;
 }
 
-.categoryCount {
+.shinCategoryCount {
   font-size: 12px;
   color: #94a3b8;
 }
 
-/* --- 🆕 Blog Stats Styles --- */
-.statBar {
+/* Blog Stats */
+.shinStatBar {
   display: flex;
   flex-direction: column;
-  gap: 16px; /* 아이템 간 간격 */
+  gap: 16px;
   border: 1px solid #334155;
-  padding: 10px 14px;
+  padding: 20px 14px; /* 패딩 살짝 조정 */
   border-radius: 16px;
   background: linear-gradient(180deg, #151a2b, #0d1120);
 }
 
-.statsItem {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* 왼쪽 정렬 */
+.shinStatBarTitle {
+  font-size: 12px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
 }
 
-/* 핑크색 강조 숫자 */
-.statsNumber {
+.shinStatsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.shinStatsNumber {
   font-size: 25px;
   font-weight: 400;
-  color: #f465ad; /* 핑크색 */
+  color: #f465ad;
   margin-bottom: 6px;
 }
 
-/* 회색 설명 글 */
-.statsLabel {
+.shinStatsLabel {
   font-size: 14px;
-  color: #94a3b8; /* 흐린 회색 */
+  color: #94a3b8;
 }
 
-/* 하얀색 구분선 (스크린샷처럼) */
-.statsDivider {
+.shinStatsDivider {
   width: 100%;
-  height: 2px;
-  background-color: #f6f6f6; /* 하얀색에 가까운 회색 */
-  opacity: 0.1; /* 너무 튀지 않게 투명도 조절 */
+  height: 1px;
+  background-color: #f6f6f6;
+  opacity: 0.1;
 }
