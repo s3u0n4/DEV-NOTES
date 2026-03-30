@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "../Blog/Blog.css";
 export default function Blog() {
   return (
@@ -30,6 +31,12 @@ export default function Blog() {
           </article>
         ))}
       </div>
+      <Link
+        href="/developer/sun/component/Blog/blogDetail"
+        className="sunPosts"
+      >
+        View all posts
+      </Link>
     </section>
   );
 }

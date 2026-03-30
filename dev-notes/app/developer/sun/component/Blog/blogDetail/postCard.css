@@ -1,0 +1,81 @@
+.sunPostCard {
+  background: white;
+  border: 1px solid #f1f5f9;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+
+.sunPostCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(167, 139, 250, 0.15);
+}
+
+.sunPostImage {
+  position: relative;
+  height: 240px;
+}
+
+.sunPostImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sunPostCategory {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #a78bfa;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.sunPostBody {
+  padding: 28px;
+}
+
+.sunPostMeta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 16px;
+}
+
+.sunMetaIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.sunPostTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.sunPostDesc {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.sunPostReadMore {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #8b5cf6;
+  transition: color 0.2s;
+}
+
+.sunPostReadMore:hover {
+  color: #7c3aed;
+}

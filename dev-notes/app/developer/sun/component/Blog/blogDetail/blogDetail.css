@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+}
+
+/* 전체 배경 및 컨테이너 */
+.sunBlog {
+  background: #fdfbf0; /* 부드러운 아이보리 배경 */
+  min-height: 100vh;
+  color: #334155;
+}
+
+/* Hero Section */
+.sunBlogHero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background-color: #fff9df;
+}
+
+.sunBlogHeroTitle {
+  font-size: 64px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 24px;
+}
+
+.sunBlogHeroDesc {
+  color: #64748b;
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.sunBlogHeroDivider {
+  width: 80px;
+  height: 4px;
+  background: #a78bfa; /* 연보라색 포인트 */
+  margin: 40px auto;
+  border-radius: 2px;
+}
+
+/* Layout */
+.sunBlogContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 48px;
+  padding: 40px 20px 100px;
+}
+
+.sunBlogSidebar {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.sunBlogMain {
+  flex: 1;
+}
+
+/* Toolbar */
+.sunBlogToolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.sunPostCount {
+  font-size: 18px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.sunWriteBtn {
+  background: #a78bfa;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.sunWriteBtn:hover {
+  background: #8b5cf6;
+  transform: translateY(-2px);
+}
+
+/* Grid */
+.sunBlogGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}

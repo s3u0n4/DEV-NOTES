@@ -1,0 +1,290 @@
+/* 전체 컨테이너: 따뜻한 아이보리 배경색 적용 */
+.sunCreateContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 20px;
+  background-color: #fff9df;
+  color: #1e293b; /* 메인 텍스트 컬러 (차분한 네이비/그레이) */
+  transition: max-width 0.4s ease;
+  min-height: 100vh;
+}
+
+.sunCreateContainer.sunPreviewActive {
+  max-width: 1400px;
+}
+
+.sunFormPreviewLayout {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+/* Header */
+.sunCreateHeaderSection {
+  margin-bottom: 30px;
+}
+.sunBackLink {
+  color: #64748b; /* 연한 텍스트 컬러 */
+  text-decoration: none;
+  font-size: 14px;
+}
+.sunMainTitle {
+  font-size: 36px;
+  margin: 10px 0;
+  font-weight: 700;
+  color: #1e293b; /* 타이틀 컬러 */
+}
+.sunTitleUnderline {
+  width: 60px;
+  height: 4px;
+  background-color: #a78bfa; /* ★ 포인트 바이올렛 컬러 */
+}
+
+.sunPreviewTopBar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.sunPreviewBtn {
+  background-color: white; /* 버튼 배경 화이트 */
+  color: #475569; /* 버튼 텍스트 컬러 */
+  border: 1px solid #e2e8f0; /* 연한 테두리 */
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.sunSize6 {
+  width: 18px;
+  height: 18px;
+}
+
+/* Form Card (왼쪽) */
+.sunFormCard {
+  flex: 1;
+  background-color: #fffbea; /* 폼 카드 배경 화이트 */
+  border: 1px solid #e2e8f0; /* 연한 테두리 */
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.sunSectionTitle {
+  font-size: 18px;
+  color: #1e293b; /* 섹션 타이틀 컬러 */
+  margin-bottom: 10px;
+}
+
+.sunInputField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sunInputField label {
+  font-size: 14px;
+  color: #1e293b; /* 라벨 컬러 */
+  font-weight: 600;
+}
+.sunInputField input,
+.sunInputField select,
+.sunExcerptArea {
+  background-color: white; /* 인풋 배경 화이트 */
+  border: 1px solid #e2e8f0; /* 연한 테두리 */
+  border-radius: 8px;
+  padding: 12px;
+  color: #1e293b; /* 인풋 텍스트 컬러 */
+  font-size: 15px;
+  outline: none;
+}
+
+/* 포커스 시 보라색 테두리 포인트 */
+.sunInputField input:focus,
+.sunInputField select:focus,
+.sunExcerptArea:focus,
+.sunContentArea:focus {
+  border-color: #a78bfa;
+}
+
+.sunIconInput {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.sunInputIcon {
+  position: absolute;
+  left: 12px;
+  color: #94a3b8; /* 아이콘 컬러 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sunIconInput input {
+  padding-left: 40px;
+  width: 100%;
+}
+.sunExcerptArea {
+  min-height: 100px;
+  resize: none;
+  border: 1px solid #e2e8f0;
+}
+
+/* Content Area */
+.sunContentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.sunContentTools {
+  display: flex;
+  gap: 8px;
+}
+.sunToolBtn {
+  background-color: #f5f3ff; /* 매우 연한 보라 배경 */
+  border: 1px solid #ddd6fe; /* 연한 보라 테두리 */
+  color: #7c3aed; /* 보라 텍스트 */
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.sunTextBlockContainer {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+}
+.sunBlockHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+.sunTIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.sunBlockActions span {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.sunContentArea {
+  width: 100%;
+  min-height: 250px;
+  background-color: white; /* 컨텐츠 영역 배경 화이트 */
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  color: #1e293b;
+  outline: none;
+}
+
+/* Preview Card (오른쪽) */
+.sunPreviewCard {
+  flex: 1;
+  background-color: white; /* 프리뷰 카드 배경 화이트 */
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 32px;
+  position: sticky;
+  top: 100px;
+}
+.sunBlogPostPreviewCard {
+  background-color: white; /* 블로그 포스트 배경 화이트 */
+  border: 1px solid #f1f5f9; /* 매우 연한 테두리 */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03); /* 아주 연한 그림자 */
+}
+.sunThumbnailPreviewBox {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: #f1f5f9; /* 썸네일 노이미지 배경 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+}
+.sunThumbnailPreviewBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sunNoThumbnail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: #94a3b8;
+}
+
+.sunPostInfoPreview {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sunPostDateRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #94a3b8;
+  font-size: 14px;
+}
+.sunPostTitlePreview {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e293b; /* 프리뷰 타이틀 컬러 */
+}
+.sunPostExcerptPreview {
+  font-size: 15px;
+  color: #64748b; /* 프리뷰 본문 컬러 */
+  line-height: 1.6;
+}
+.sunBottomSeparator {
+  height: 1px;
+  background-color: #e2e8f0;
+  margin-top: 10px;
+}
+
+/* Footer Buttons */
+.sunFormFooter {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.sunSaveBtn {
+  flex: 1;
+  background-color: #a78bfa; /* ★ 메인 저장 버튼 보라색 */
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.sunCancelBtn {
+  background-color: #f1f5f9; /* 연한 배경 */
+  color: #64748b; /* 회색 텍스트 */
+  border: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}

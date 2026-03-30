@@ -1,0 +1,122 @@
+.sunSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sunSidebarCard {
+  background: white;
+  border: 1px solid #f1f5f9;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.sunSidebarTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+/* Search Box */
+.sunSearchWrapper {
+  position: relative;
+}
+
+.sunSearchIcon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+}
+
+.sunSearchInput {
+  width: 100%;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 14px 16px 14px 44px;
+  color: #1e293b;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.sunSearchInput:focus {
+  border-color: #a78bfa;
+  background-color: white;
+}
+
+/* Category List */
+.sunCategoryList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sunCategoryItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background-color: transparent;
+  border: 1px solid #f1f5f9;
+  border-radius: 12px;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sunCategoryItem:hover {
+  border-color: #cbd5e1;
+  background-color: #f8fafc;
+}
+
+.sunCategoryItem.sunActive {
+  background-color: #f5f3ff;
+  border-color: #ddd6fe;
+  color: #7c3aed;
+  font-weight: 600;
+}
+
+.sunCategoryCount {
+  font-size: 12px;
+  background: #f1f5f9;
+}
+
+/* Stats Bar */
+.sunStatBar {
+  background: white;
+  border: 1px solid #f1f5f9;
+  padding: 24px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sunStatBarTitle {
+  font-size: 16px;
+}
+
+.sunStatsItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.sunStatsNumber {
+  font-size: 32px;
+  font-weight: 700;
+  color: #7c3aed;
+}
+
+.sunStatsLabel {
+  font-size: 15px;
+  color: #64748b;
+}
+
+.sunStatsDivider {
+  height: 1px;
+  background-color: #f1f5f9;
+}

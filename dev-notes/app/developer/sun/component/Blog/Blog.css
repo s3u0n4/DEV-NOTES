@@ -89,8 +89,21 @@
   transition: color 0.2s ease;
 }
 
-.readMore:hover {
-  color: #d91be3;
+.sunPosts {
+  border-radius: 10px;
+  background-color: #a78bfa;
+  margin-top: 50px;
+  padding: 12px 30px;
+  color: #ffff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.5s ease, box-shadow 0.25s ease;
+}
+
+.sunPosts:hover {
+  color: #8b5cf6;
+  transition: color 0.2s ease;
+  transform: translateY(-8px);
 }
 
 /* 반응형 */
