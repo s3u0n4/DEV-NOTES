@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 /* 전체 컨테이너: 따뜻한 아이보리 배경색 적용 */
 .sunCreateContainer {
   max-width: 1000px;
@@ -10,7 +14,7 @@
 }
 
 .sunCreateContainer.sunPreviewActive {
-  max-width: 1400px;
+  width: 100%;
 }
 
 .sunFormPreviewLayout {
