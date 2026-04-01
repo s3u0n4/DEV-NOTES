@@ -1,4 +1,4 @@
-import "../Main/Main.css";
+import "./Main.css";
 export default function Main() {
   return (
     <section className="main">
@@ -13,10 +13,10 @@ export default function Main() {
       </p>
 
       <div className="actions">
-        <a href="#contact" className="btn primary">
+        <a href="#contact" className="btnPrimary">
           Get in touch
         </a>
-        <a href="#projects" className="btn secondary">
+        <a href="#projects" className="btnSecondary">
           View Project
         </a>
       </div>

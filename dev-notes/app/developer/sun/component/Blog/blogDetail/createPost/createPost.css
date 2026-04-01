@@ -1,28 +1,36 @@
 * {
   margin: 0;
 }
-
-/* 전체 컨테이너: 따뜻한 아이보리 배경색 적용 */
 .sunCreateContainer {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 100px 20px;
-  background-color: #fff9df;
-  color: #1e293b; /* 메인 텍스트 컬러 (차분한 네이비/그레이) */
-  transition: max-width 0.4s ease;
-  min-height: 100vh;
+  width: 100%; /* 가로 100% */
+  min-height: 100vh; /* 화면 세로 꽉 채우기 */
+  background-color: #fff9df; /* 이미지 속 아이보리 배경색 */
+  margin: 0;
+  padding: 80px 0; /* 상하 여백 */
 }
 
-.sunCreateContainer.sunPreviewActive {
+/* 실제 컨텐츠가 모이는 박스 */
+.sunInnerWrapper {
+  max-width: 1000px; /* 평소 컨텐츠 너비 */
+  margin: 0 auto; /* 중앙 정렬 */
+  padding: 0 24px; /* 양옆 최소 여백 */
+  transition: max-width 0.4s ease; /* 너비 변할 때 부드럽게 */
+}
+
+/* 프리뷰가 켜졌을 때만 컨텐츠 영역을 넓힘 */
+.sunCreateContainer.sunPreviewActive .sunInnerWrapper {
+  max-width: 1400px; /* 프리뷰 시 넓게 설정 */
+}
+
+/* 폼과 프리뷰가 나란히 배치되는 레이아웃 */
+.sunFormPreviewLayout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
   width: 100%;
 }
 
-.sunFormPreviewLayout {
-  display: flex;
-  gap: 32px;
-  align-items: flex-start;
-}
-
+/* 기존 CSS에서 .sunCreateContainer에 있던 max-width나 margin auto는 삭제해주세요! */
 /* Header */
 .sunCreateHeaderSection {
   margin-bottom: 30px;

@@ -22,7 +22,7 @@ export default function Header() {
     <header className="shinHeader">
       <div className="shinHeaderInner">
         <h1 className="shinLogo">
-          <Link href="/">&lt;/&gt; Developer Portfolio</Link>
+          <Link href="/">&lt;/&gt; DevPortfolio</Link>
         </h1>
 
         <div className="shinNavGroup">

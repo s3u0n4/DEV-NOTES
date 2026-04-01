@@ -22,7 +22,7 @@ export default function Header() {
     <header className="header">
       <div className="headerInner">
         <h1 className="logo">
-          <Link href="/">&lt;/&gt; Developer Portfolio</Link>
+          <Link href="/">&lt;/&gt; DevPortfolio</Link>
         </h1>
 
         <div className="navGroup">

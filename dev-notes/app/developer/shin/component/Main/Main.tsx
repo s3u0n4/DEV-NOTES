@@ -1,4 +1,4 @@
-import "../Main/Main.css";
+import "./Main.css";
 export default function Main() {
   return (
     <section className="shinMain">
