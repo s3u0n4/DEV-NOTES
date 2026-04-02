@@ -1,7 +1,6 @@
 "use client";
 
-import React from "react";
-import "./postCard.css";
+import "./postcard.css";
 type Props = {
   post: {
     id: number;

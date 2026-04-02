@@ -1,4 +1,4 @@
-import "../About/About.css";
+import "./about.css";
 export default function About() {
   return (
     <section id="about" className="shinSection">

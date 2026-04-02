@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "../Blog/Blog.css";
+import "./blog.css";
 export default function Blog() {
   return (
     <section id="blog" className="sunBlogSection">

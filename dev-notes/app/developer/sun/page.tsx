@@ -1,11 +1,11 @@
-import Main from "./component/Main/Main";
-import About from "./component/About/About";
-import Skills from "./component/Skills/Skills";
-import Projects from "./component/Projects/Projects";
-import Blog from "./component/Blog/Blog";
-import Contact from "./component/Contact/Contact";
-import Footer from "./component/Footer/Footer";
-import Header from "./component/Header/Header";
+import Main from "./component/main/main";
+import Projects from "./component/projects/projects";
+import Blog from "./component/blog/blog";
+import Contact from "./component/contact/contact";
+import Footer from "./component/footer/footer";
+import Header from "./component/header/header";
+import Skills from "./component/skills/skills";
+import About from "./component/about/about";
 
 export default function Page() {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
-import "./Header.css";
+import "./header.css";
 import Link from "next/link";
 
 export default function Header() {

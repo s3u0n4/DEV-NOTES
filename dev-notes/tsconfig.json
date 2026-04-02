@@ -29,7 +29,7 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts",
-    "app/developer/shin/component/blog/blogDetail"
+    "app/developer/shin/component/blog/blogdetail"
   ],
   "exclude": ["node_modules"]
 }

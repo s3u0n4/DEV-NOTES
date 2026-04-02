@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import "./createPost.css";
+import "./createpost.css";
 
 export default function CreatePost() {
   const [isPreviewVisible, setIsPreviewVisible] = useState(false);

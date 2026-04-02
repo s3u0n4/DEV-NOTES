@@ -1,4 +1,4 @@
-import "../Skills/Skills.css";
+import "./skills.css";
 export default function Skills() {
   return (
     <section id="skills" className="sunSkillSection">

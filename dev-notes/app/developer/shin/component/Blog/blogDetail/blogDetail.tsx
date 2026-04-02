@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import "./blogDetail.css";
-import PostCard from "./postCard";
-import Sidebar from "./sideBar";
+import "./blogdetail.css";
+import Sidebar from "./sidebar";
+import PostCard from "./postcard";
 
 const MOCK_DATA = [
   {

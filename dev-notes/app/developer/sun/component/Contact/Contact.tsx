@@ -1,4 +1,4 @@
-import "../Contact/Contact.css";
+import "./contact.css";
 export default function Contact() {
   return (
     <section id="contact" className="sunContactSection">

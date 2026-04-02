@@ -1,4 +1,4 @@
-import DeveloperCard from "../components/developCard";
+import Developercard from "@/components/developercard";
 import Link from "next/link";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
 
       <section className="cardWrapper">
         <Link href="/developer/sun">
-          <DeveloperCard
+          <Developercard
             icon="../web.png"
             name="이선용"
             role="WEB · FRONTEND DEVELOPER"
@@ -32,7 +32,7 @@ export default function Home() {
         </Link>
 
         <Link href="/developer/shin">
-          <DeveloperCard
+          <Developercard
             icon="../mobile.png"
             name="신중하"
             role="MOBILE · FULL STACK DEVELOPER"
