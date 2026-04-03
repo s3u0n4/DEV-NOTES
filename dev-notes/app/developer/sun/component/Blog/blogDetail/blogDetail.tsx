@@ -52,7 +52,7 @@ export default function BlogDetail() {
             </span>
 
             <Link
-              href="/developer/sun/component/Blog/blogDetail/createPost"
+              href="/developer/sun/component/blog/blogdetail/createpost"
               className="sunWriteBtn"
             >
               + Write Post

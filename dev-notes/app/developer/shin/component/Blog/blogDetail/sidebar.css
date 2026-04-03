@@ -1,0 +1,131 @@
+/* Sidebar */
+.shinSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.shinSidebarCard {
+  background: linear-gradient(180deg, #151a2b, #0d1120);
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 14px 16px;
+}
+
+.shinSidebarTitle {
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: #f1f5f9;
+  font-weight: 600;
+}
+
+/* Search Box */
+.shinSearchWrapper {
+  position: relative;
+}
+
+.shinSearchIcon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  color: #64748b;
+  pointer-events: none;
+}
+
+.shinSearchInput {
+  width: 100%;
+  background-color: #11182acf;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 10px 12px 10px 40px;
+  color: white;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.shinSearchInput:focus {
+  border-color: #ec4899;
+}
+
+/* Category List */
+.shinCategoryList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.shinCategoryItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.shinCategoryItem:hover {
+  border-color: #4b5563;
+  color: #ffffff;
+}
+
+.shinCategoryItem.shinActive {
+  border-color: #ec4899;
+  background-color: rgba(236, 72, 153, 0.1);
+  color: #ec4899;
+}
+
+.shinCategoryCount {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* Blog Stats */
+.shinStatBar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid #334155;
+  padding: 20px 14px; /* 패딩 살짝 조정 */
+  border-radius: 16px;
+  background: linear-gradient(180deg, #151a2b, #0d1120);
+}
+
+.shinStatBarTitle {
+  font-size: 12px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.shinStatsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.shinStatsNumber {
+  font-size: 25px;
+  font-weight: 400;
+  color: #f465ad;
+  margin-bottom: 6px;
+}
+
+.shinStatsLabel {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.shinStatsDivider {
+  width: 100%;
+  height: 1px;
+  background-color: #f6f6f6;
+  opacity: 0.1;
+}

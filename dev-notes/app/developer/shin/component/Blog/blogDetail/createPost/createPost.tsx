@@ -21,7 +21,7 @@ export default function CreatePost() {
       {/* Header Section */}
       <header className="shinCreateHeaderSection">
         <Link
-          href="/developer/shin/component/blog/blogDetail"
+          href="/developer/shin/component/blog/blogdetail"
           className="shinBackLink"
         >
           ← Back to Blog

@@ -25,7 +25,6 @@
   display: block;
   width: 80px;
   height: 4px;
-
   background: #f6339a;
   margin: 17px auto 0;
 }
@@ -52,7 +51,7 @@
 
 .shinAboutCard:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 30px rgba(99, 102, 241, 0.2);
+  box-shadow: 0 0 30px rgba(246, 51, 154, 0.25);
 }
 
 /* 카드 제목 */

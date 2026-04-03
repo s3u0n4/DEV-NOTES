@@ -8,7 +8,7 @@
   z-index: 9999;
   isolation: isolate;
   background-color: #fffbea;
-  padding: 0px 200px;
+  padding: 0 15%;
 }
 
 /* 내부 컨테이너 */
@@ -45,7 +45,6 @@
   display: flex;
   align-items: center;
   gap: 16px;
-
   font-size: 18px;
 }
 
@@ -57,12 +56,9 @@
 /* 토글 */
 .toggleSwitch {
   background-color: #ddd6ff;
-
   width: 60px;
   height: 34px;
-
   border-radius: 999px;
-
   position: relative;
   cursor: pointer;
 }
@@ -94,22 +90,29 @@
 .toggleSwitch.shin .toggleCircle {
   transform: translateX(36px);
 }
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 20px; /* 큰 여백 제거 */
+  }
+}
+
 @media (max-width: 768px) {
   .headerInner {
-    padding: 0 20px;
+    height: 60px; /* 헤더 높이 살짝 축소 */
   }
 
-  /* nav 숨김 */
   .nav {
-    display: none;
-  }
-
-  /* navGroup 밀림 제거 */
-  .navGroup {
-    margin-left: 0;
+    display: none; /* 메뉴 숨김 */
   }
 
   .logo a {
-    font-size: 16px;
+    font-size: 17px; /* 폰트 크기 미세 조정 */
+    letter-spacing: -0.5px;
+  }
+
+  .navGroup {
+    gap: 10px;
+    padding: 0;
   }
 }

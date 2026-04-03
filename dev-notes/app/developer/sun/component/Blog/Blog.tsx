@@ -32,7 +32,7 @@ export default function Blog() {
         ))}
       </div>
       <Link
-        href="/developer/sun/component/Blog/blogDetail"
+        href="/developer/sun/component/blog/blogdetail"
         className="sunPosts"
       >
         View all posts

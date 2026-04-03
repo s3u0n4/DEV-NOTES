@@ -52,7 +52,7 @@ export default function BlogDetail() {
             </span>
 
             <Link
-              href="/developer/shin/component/blog/blogDetail/createPost"
+              href="/developer/shin/component/blog/blogdetail/createpost"
               className="shinWriteBtn"
             >
               + Write Post

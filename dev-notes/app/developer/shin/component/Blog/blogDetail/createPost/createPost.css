@@ -279,3 +279,98 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+/* 2. 태블릿 구간 (1024px 이하) */
+@media (max-width: 1024px) {
+  .shinCreateContainer {
+    max-width: 100%;
+    padding: 100px 20px 60px;
+  }
+
+  .shinMainTitle {
+    font-size: 30px;
+  }
+
+  .shinFormPreviewLayout {
+    gap: 20px;
+  }
+}
+
+/* 3. 모바일 전환 구간 (850px 이하) */
+@media (max-width: 850px) {
+  /* 폼과 프리뷰를 세로로 쌓기 */
+  .shinFormPreviewLayout {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* 왼쪽 폼 카드 */
+  .shinFormCard {
+    width: 100%;
+    padding: 24px;
+  }
+
+  /* 오른쪽 프리뷰 카드 */
+  .shinPreviewCard {
+    position: static; /* sticky 해제 */
+    width: 100%;
+    margin-top: 30px;
+    padding: 24px;
+  }
+
+  /* 프리뷰 버튼 중앙 정렬 */
+  .shinPreviewTopBar {
+    justify-content: center;
+  }
+}
+
+/* 4. 스마트폰 구간 (480px 이하) */
+@media (max-width: 480px) {
+  .shinCreateContainer {
+    padding-top: 90px; /* 헤더가 60px로 줄어드는 경우 대응 */
+  }
+
+  .shinMainTitle {
+    font-size: 24px;
+  }
+
+  .shinFormCard,
+  .shinPreviewCard {
+    padding: 16px;
+    gap: 20px;
+  }
+
+  /* 툴바 가로 스크롤 허용 (버튼이 많을 경우) */
+  .shinContentHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .shinContentTools {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 8px;
+  }
+
+  /* 하단 버튼 세로 배치 */
+  .shinFormFooter {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .shinSaveBtn,
+  .shinCancelBtn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  /* 입력창 폰트 미세 조정 */
+  .shinInputField input,
+  .shinInputField select,
+  .shinExcerptArea,
+  .shinContentArea {
+    font-size: 14px;
+  }
+}

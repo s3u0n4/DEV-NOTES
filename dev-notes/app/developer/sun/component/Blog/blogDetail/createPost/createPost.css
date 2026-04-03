@@ -6,7 +6,7 @@
   min-height: 100vh; /* 화면 세로 꽉 채우기 */
   background-color: #fff9df; /* 이미지 속 아이보리 배경색 */
   margin: 0;
-  padding: 80px 0; /* 상하 여백 */
+  padding: 120px 0; /* 상하 여백 */
 }
 
 /* 실제 컨텐츠가 모이는 박스 */
@@ -299,4 +299,98 @@
   padding: 14px 30px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+/* --- 반응형 대응 시작 --- */
+
+/* 1. 태블릿 및 작은 데스크탑 (1024px 이하) */
+@media (max-width: 1024px) {
+  .sunInnerWrapper {
+    max-width: 95%; /* 여백 확보 */
+  }
+
+  .sunMainTitle {
+    font-size: 30px; /* 타이틀 크기 축소 */
+  }
+
+  .sunFormPreviewLayout {
+    gap: 20px; /* 사이 간격 축소 */
+  }
+}
+
+/* 2. 모바일/태블릿 전환 지점 (850px 이하) */
+@media (max-width: 850px) {
+  .sunCreateContainer {
+    padding: 100px 0; /* 상하 패딩 축소 */
+  }
+
+  /* 폼과 프리뷰를 세로로 배치 */
+  .sunFormPreviewLayout {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* 프리뷰 카드가 아래로 내려가면서 가로를 꽉 채움 */
+  .sunPreviewCard {
+    position: static; /* sticky 해제 */
+    width: 100%;
+    margin-top: 40px; /* 폼과의 간격 */
+    padding: 24px; /* 패딩 축소 */
+  }
+
+  .sunFormCard {
+    width: 100%;
+    padding: 20px; /* 패딩 축소 */
+  }
+
+  /* 프리뷰 버튼 상단바 위치 조정 */
+  .sunPreviewTopBar {
+    justify-content: center; /* 중앙 정렬 */
+  }
+}
+
+/* 3. 스마트폰 (480px 이하) */
+@media (max-width: 480px) {
+  .sunMainTitle {
+    font-size: 24px;
+  }
+
+  .sunFormCard,
+  .sunPreviewCard {
+    padding: 16px;
+    border-radius: 8px; /* 곡률 살짝 조정 */
+  }
+
+  /* 컨텐츠 도구 모음(T, B 등)이 넘칠 경우 대비 */
+  .sunContentHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .sunContentTools {
+    width: 100%;
+    overflow-x: auto; /* 버튼이 많아지면 가로 스크롤 */
+    padding-bottom: 5px;
+  }
+
+  /* 하단 저장/취소 버튼 가로 배치에서 세로 배치로 변경 */
+  .sunFormFooter {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sunSaveBtn,
+  .sunCancelBtn {
+    width: 100%; /* 버튼이 가로를 꽉 채우게 */
+    padding: 12px;
+  }
+
+  /* 인풋 필드 텍스트 크기 미세 조정 */
+  .sunInputField input,
+  .sunInputField select,
+  .sunExcerptArea,
+  .sunContentArea {
+    font-size: 14px;
+  }
 }

@@ -23,7 +23,7 @@ export default function CreatePost() {
         {/* Header Section */}
         <header className="sunCreateHeaderSection">
           <Link
-            href="/developer/sun/component/blog/blogDetail"
+            href="/developer/sun/component/blog/blogdetail"
             className="sunBackLink"
           >
             ← Back to Blog
