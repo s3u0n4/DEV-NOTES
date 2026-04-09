@@ -1,9 +1,9 @@
-import About from "./component/about/about";
-import Blog from "./component/blog/blog";
-import Contact from "./component/contact/contact";
-import Main from "./component/main/main";
-import Projects from "./component/projects/projects";
-import Skills from "./component/skills/skills";
+import About from "./component/About/About";
+import Blog from "./component/Blog/Blog";
+import Contact from "./component/Contact/Contact";
+import Main from "./component/Main/Main";
+import Projects from "./component/Projects/Projects";
+import Skills from "./component/Skills/Skills";
 
 export default function Page() {
   return (

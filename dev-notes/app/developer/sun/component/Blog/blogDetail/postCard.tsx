@@ -1,6 +1,6 @@
 "use client";
 
-import "./postcard.css";
+import "./postCard.css";
 type Props = {
   post: {
     id: number;

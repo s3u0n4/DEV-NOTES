@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import "./sidebar.css";
+import "./sideBar.css";
 
 export default function Sidebar() {
   // 선택된 카테고리를 관리하는 상태 (기본값: 'All')

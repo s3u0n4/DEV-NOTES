@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "./blog.css";
+import "./Blog.css";
 
 export default function Blog() {
   return (

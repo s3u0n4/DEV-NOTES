@@ -1,4 +1,4 @@
-import BlogDetail from "./blogdetail";
+import BlogDetail from "./blogDetail";
 
 export default function Page() {
   return <BlogDetail />;
