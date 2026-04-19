@@ -5,7 +5,7 @@ type Props = {
   skills: string[];
 };
 
-export default function Developercard({ icon, name, role, skills }: Props) {
+export default function DevCard({ icon, name, role, skills }: Props) {
   return (
     <article className="card">
       <div className="icon">
